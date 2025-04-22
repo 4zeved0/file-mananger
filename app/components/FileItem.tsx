@@ -29,7 +29,9 @@ export default function FileItem({ filePath, fileName, onDelete }: FileItemProps
 
   return (
     <div className="flex justify-between items-center transition-all duration-200">
-      <span className="text-sm text-gray-300">📄{fileName}</span>
+      <span className="text-sm text-gray-300 overflow-hidden text-ellipsis whitespace-nowrap" style={{ maxWidth: '150px' }}>
+        📄{fileName}
+      </span>
       <div className="flex gap-2">
         <button
           onClick={downloadFile}
