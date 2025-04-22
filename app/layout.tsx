@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import ProviderSession from "./providers/ProviderSession";
 import { Metadata } from "next";
 import "./globals.css";
-import { authOptions } from "./api/auth/[...nextauth]/route";
+import { authOptions } from "./lib/auth";
 
 // Metadata for the page
 export const metadata: Metadata = {

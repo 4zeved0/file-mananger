@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { auth } from "../lib/auth";
 import ProfileButton from "./ProfileButton";
+import { auth } from "../lib/auth-helper";
 
 export default async function Navbar() {
   const session = await auth();
